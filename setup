@@ -4,6 +4,10 @@ sudo apt install vim -y
 sudo apt install neofetch -y
 sudo apt install curl -y
 sudo apt install git -y
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+sudo apt install python3-venv -y
+sudo apt install software-properties-common -y
 sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo usermod -aG docker $USER
