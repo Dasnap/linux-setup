@@ -14,3 +14,5 @@ sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo usermod -aG docker $USER
 sudo setfacl -m user:$USER:rw /var/run/docker.sock
+sudo apt install openssh-server -y
+sudo apt install openssh-client -y
