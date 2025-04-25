@@ -16,7 +16,7 @@ sudo setfacl -m user:$USER:rw /var/run/docker.sock
 sudo apt install openssh-server -y
 sudo apt install openssh-client -y
 
-echo " Run this in sudo su if Debian"
+echo "To download Cockpit, run this in sudo su if Debian"
 echo ". /etc/os-release"
 echo ""deb http://deb.debian.org/debian \$\{VERSION_CODENAME\}-backports main" > /etc/apt/sources.list.d/backports.list"
 echo "apt update"
