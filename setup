@@ -17,12 +17,11 @@ sudo apt install openssh-server -y
 sudo apt install openssh-client -y
 
 echo " Run this in sudo su if Debian"
-echo ". /etc/os-release
-echo "deb http://deb.debian.org/debian ${VERSION_CODENAME}-backports main" > \
-    /etc/apt/sources.list.d/backports.list
-apt update
-apt install -t ${VERSION_CODENAME}-backports cockpit"
+echo ". /etc/os-release"
+echo ""deb http://deb.debian.org/debian \$\{VERSION_CODENAME\}-backports main" > /etc/apt/sources.list.d/backports.list"
+echo "apt update"
+echo "apt install -t \$\{VERSION_CODENAME\}-backports cockpit"
 
-echo "Or this if Ubuntu:
-. /etc/os-release
-sudo apt install -t ${VERSION_CODENAME}-backports cockpit"
+echo "Or this if Ubuntu:"
+echo ". /etc/os-release"
+echo "sudo apt install -t \$\{VERSION_CODENAME\}-backports cockpit"
